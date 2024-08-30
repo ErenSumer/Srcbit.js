@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error - Something Went Wrong</title>
+    <style>
+      /* Base styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1f1c2c; /* Solid background color */
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        margin-top: 900px;
+        text-align: center;
+        max-width: 600px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #ff6f61;
+        animation: pulse 2s infinite;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        color: #ffd700;
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 1rem;
+        color: #e0e0e0;
+      }
+
+      pre {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 8px;
+        color: #f4f4f4;
+        font-size: 0.9rem;
+        text-align: left;
+        white-space: pre-wrap; /* Allow wrapping of text */
+        word-wrap: break-word; /* Break long words to fit the container */
+        overflow: hidden; /* Remove scrollbars */
+        max-height: none; /* Allow full height */
+      }
+
+      /* Animations */
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! Something Went Wrong</h1>
+      <div class="error-details">
+        <h2>Error Message:</h2>
+        <pre>{{ERROR_MESSAGE}}</pre>
+        <h2>Stack Trace:</h2>
+        <pre>{{ERROR_STACK}}</pre>
+      </div>
+      <div class="request-details">
+        <h2>Request Details:</h2>
+        <p><strong>Method:</strong> {{REQUEST_METHOD}}</p>
+        <p><strong>URL:</strong> {{REQUEST_URL}}</p>
+        <h3>Headers:</h3>
+        <pre>{{REQUEST_HEADERS}}</pre>
+        <h3>Body:</h3>
+        <pre>{{REQUEST_BODY}}</pre>
+      </div>
+    </div>
+  </body>
+</html>
