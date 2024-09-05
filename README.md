@@ -18,7 +18,7 @@ SourceBit is a powerful and flexible backend framework for building robust web a
 ## Installation
 
 ```bash
-npm install sourcebit
+npm install srcbit
 ```
 
 ## Quick Start
