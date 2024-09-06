@@ -1,6 +1,6 @@
 {
   "name": "srcbit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A fast, optimized backend framework",
   "main": "index.js",
   "private": false,
@@ -26,7 +26,6 @@
     "srcbitjs"
   ],
   "dependencies": {
-    "cors": "^2.8.5",
     "mime-types": "^2.1.35",
     "mongoose": "^8.6.1",
     "querystring": "^0.2.1",
