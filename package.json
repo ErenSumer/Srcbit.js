@@ -1,6 +1,6 @@
 {
   "name": "srcbit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A fast, optimized backend framework",
   "main": "index.js",
   "private": false,
@@ -8,16 +8,23 @@
     "type": "git",
     "url": "git+https://github.com/ErenSumer/Srcbit.js.git"
   },
-  "bin": {
-    "srcbit": "bin/srcbit-cli.js"
-  },
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "build": "webpack"
   },
-  "keywords": [],
+  "keywords": [
+    "backend",
+    "framework",
+    "nodejs",
+    "node",
+    "express",
+    "fast",
+    "optimized",
+    "srcbit",
+    "srcbitjs"
+  ],
   "dependencies": {
     "cors": "^2.8.5",
     "mime-types": "^2.1.35",
