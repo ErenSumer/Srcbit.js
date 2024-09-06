@@ -1,0 +1,27 @@
+# Development files
+.git
+.gitignore
+.vscode
+
+
+# Documentation
+README.md
+LICENSE
+
+# Build and temporary files
+node_modules/
+coverage/
+.nyc_output/
+*.log
+
+# examples
+examples/
+
+# Editor specific files
+*.swp
+*.swo
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
