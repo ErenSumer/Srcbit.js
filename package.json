@@ -1,6 +1,6 @@
 {
   "name": "srcbit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A fast, optimized backend framework",
   "main": "index.js",
   "private": false,
