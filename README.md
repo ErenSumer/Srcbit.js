@@ -23,7 +23,7 @@ npm install srcbit
 
 ## Quick Start
 ```javascript
-const {SourceBit} = require('srcbit');
+const SourceBit = require('srcbit');
 
 const app = new SourceBit({ port: 3000 });
 
